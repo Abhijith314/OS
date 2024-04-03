@@ -31,10 +31,32 @@ Enter the process size :- <br>
 3 : 	100<br>
 4 : 	80<br>
 
-Process No.	Process Size	Block no.<br>
-1	         	200		        1<br>
-2		        160		        Not Allocated<br>
-3		        100		        1<br>
-4		        80		        2<br>
+<table>
+  <tr>
+    <td>Process No.</td>
+    <td>Process Size</td>
+    <td>Block no.</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>200</td>
+    <td>1</td>
+  </tr>
+    <tr>
+    <td>2</td>
+    <td>160</td>
+    <td>Not Allocated</td>
+  </tr>
+    <tr>
+    <td>3</td>
+    <td>100</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>80</td>
+    <td>2</td>
+  </tr>
+</table>
 
 Process finished.</p><br>
