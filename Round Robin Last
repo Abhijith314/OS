@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 struct Process {
 int pid,at,bt,rbt,tat,wt;
