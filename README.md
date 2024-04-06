@@ -59,4 +59,22 @@ Enter the process size :- <br>
   </tr>
 </table>
 
-Process finished.</p><br>
+Process finished.</p><br><br>
+<h2>Best_Fit</h2>
+<pre>Enter the number of memory blocks and processes: 3 4
+Enter the block sizes:
+1 : 200
+2 : 150
+3 : 80
+Enter the process sizes:
+1 : 140
+2 : 50
+3 : 70
+4 : 130
+
+Process No.	Process Size	Block no.
+1		140		2
+2		50		3
+3		70		1
+4		130		1
+</pre>
