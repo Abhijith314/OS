@@ -33,7 +33,7 @@ else {
 ct+=tq;
 p[i].rbt-=tq;
 }
-printf("\t%d\t%d",p[i].pid,ct);
+printf("\tP%d\t%d",p[i].pid,ct);
 }
 }
 }
@@ -47,7 +47,7 @@ avgtat=ttat/n;
 avgwt=twt/n;
 printf("\nProcess\tTurnaround Time\tWaiting Time\n");
 for(i=0;i<n;i++) {
-printf("%d\t%d\t\t%d\n",p[i].pid,p[i].tat,p[i].wt);
+printf("P%d\t%d\t\t%d\n",p[i].pid,p[i].tat,p[i].wt);
 }
 printf("Average Turnaround Time : %f\n",avgtat);
 printf("Average Waiting Time: %f\n",avgwt);
