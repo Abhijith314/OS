@@ -1,4 +1,44 @@
 <h1>OUTPUTS</h1>
+<h2>Bankers Algorithm</h2>
+<h3>Safe sequence</h3>
+<pre>Enter the number of processes : 5 
+Enter the number of resources : 3
+Enter the allocation matrix for each process :
+P0 : 0 1 0
+P1 : 2 0 0
+P2 : 3 0 2
+P3 : 2 1 1
+P4 : 0 0 2
+Enter the maximum matrix for each process :
+P0 : 7 5 3
+P1 : 3 2 2
+P2 : 9 0 2 
+P3 : 2 2 2
+P4 : 4 3 3
+Enter the available resources : 3 3 2
+
+Following is system is safe and the SAFE Sequence is :
+P1 -&gt; P3 -&gt; P4 -&gt; P0 -&gt;  P2
+</pre>
+<h3>Unsafe</h3>
+<pre>Enter the number of processes : 5
+Enter the number of resources : 3
+Enter the allocation matrix for each process :
+P0 : 0 1 0
+P1 : 2 0 0
+P2 : 3 0 2
+P3 : 2 1 1
+P4 : 0 0 2
+Enter the maximum matrix for each process :
+P0 : 7 5 3
+P1 : 3 4 2
+P2 : 9 0 2
+P3 : 2 5 3
+P4 : 4 3 3
+Enter the available resources : 3 3 2
+
+The following system is not safe
+</pre> <br>
 <h2>Semaphore </h2>
 <pre>1 : Producer
 2 : Consumer
