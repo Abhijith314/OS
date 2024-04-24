@@ -111,4 +111,18 @@ Process No.	Process Size	Block no.
 2		50		2
 3		70		2
 4		130		Not Allocated
+</pre><br>
+<h2>FIFO Paging</h2>
+<pre>Enter the number of reference string : 7
+Enter the no. of frames : 3
+Enter the reference string : 1 3 0 3 5 6 3
+1 : 1  -  -  
+3 : 1  3  -  
+0 : 1  3  0  
+3 : -  -  -  
+5 : 5  3  0  
+6 : 5  6  0  
+3 : 5  6  3  
+
+Page fault = 6
 </pre>
