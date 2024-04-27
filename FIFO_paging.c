@@ -29,7 +29,7 @@ m=1;
 printf("%d : ",ref[i]);
 if(m==1) {
 for(j=0;j<f;j++)
-printf("-  ");
+printf("%d  ",p[j]);
 printf("\n");
 }
 else {
