@@ -1,7 +1,5 @@
 #include<stdio.h>
-//#define MAX_REFERENCES 50
-//#define MAX_FRAMES 10
-int main() {
+void main() {
 int i,j,k=0,f,n,s=-1,m=0,temp=0,o;
 printf("Enter the number of reference string : ");
 scanf("%d",&n);
@@ -49,5 +47,4 @@ k++;
 }
 }
 printf("\nPage fault = %d\n", k);
-return 0;
 }
