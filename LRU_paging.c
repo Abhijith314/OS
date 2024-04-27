@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main() {
+void main() {
 int i,j,k=0,f,n,s=-1,m=0,temp=0,o;
 printf("Enter the number of reference strings: ");
 scanf("%d",&n);
@@ -55,5 +55,4 @@ k++;
 }
 }
 printf("\nPage fault = %d\n", k);
-return 0;
 }
