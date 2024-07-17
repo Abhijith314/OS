@@ -4,8 +4,8 @@ int p_no,bt_tm,tat,wt;
 }a[20],temp;
 void main()
 {
-int n,i,j,tta=0,twt=0,ttat=0;
-double atat,awt;
+int n,i,j,tta=0;
+float twt=0,ttat=0,atat,awt;
 printf("Enter the no. of process : ");
 scanf("%d",&n);
 for(i=0;i<n;i++)
@@ -23,8 +23,6 @@ a[j]=temp;
 for(i=0;i<n;i++){
 a[i].tat=tta+a[i].bt_tm;
 tta=tta+a[i].bt_tm;
-}
-for(i=0;i<n;i++){
 a[i].wt=a[i].tat-a[i].bt_tm;
 }
 for(i=0;i<n;i++){
