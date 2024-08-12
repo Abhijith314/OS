@@ -15,7 +15,21 @@ Enter the number of request : 5
 Enter the request : 60 77 40 20 35
 The sequence is : 43 -> 40 -> 35 -> 20 -> 0 -> 60 -> 77
 Total head movement = 120</pre>
-
+<h2>Disk C-SCAN with Previous position</h2>
+<h3>Forward</h3>
+<pre>Enter the current head position : 53
+Enter the previous position : 40
+Enter the number of request : 8
+Enter the request : 98 183 37 122 14 124 65 67
+The sequence is : 53 -> 65-> 67-> 98-> 122-> 124-> 183 -> 199 -> 0-> 14-> 37
+Total head movement = 382</pre>
+<h3>Backward</h3>
+<pre>Enter the current head position : 53
+Enter the previous position : 60
+Enter the number of request : 8
+Enter the request : 98 183 37 122 14 124 65 67
+The sequence is : 53 -> 37 -> 14 -> 0 -> 199 -> 183 -> 124 -> 122 -> 98 -> 67 -> 65
+Total head movement = 571</pre>
 <h2>Bankers Algorithm</h2>
 <h3>Safe sequence</h3>
 <pre>Enter the number of processes : 5 
