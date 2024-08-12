@@ -1,4 +1,21 @@
 <h1>OUTPUTS</h1>
+<h2>Disk SCAN with Previous position</h2>
+<h3>Forward</h3>
+<pre>Enter the current head position : 43
+Enter the previous position : 30
+Enter the number of request : 5
+Enter the request : 60 77 40 20 35
+The sequence is : 43 -> 60 -> 77 -> 199 -> 40 -> 35 -> 20
+Total head movement = 335
+</pre>
+<h3>Backward</h3>
+<pre>Enter the current head position : 43
+Enter the previous position : 50
+Enter the number of request : 5
+Enter the request : 60 77 40 20 35
+The sequence is : 43 -> 40 -> 35 -> 20 -> 0 -> 60 -> 77
+Total head movement = 120</pre>
+
 <h2>Bankers Algorithm</h2>
 <h3>Safe sequence</h3>
 <pre>Enter the number of processes : 5 
