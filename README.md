@@ -1,4 +1,26 @@
 <h1>OUTPUTS</h1>
+<h2>RoundRobinFinal.c OUTPUT</h2>
+<pre>
+Enter the number of process : 4
+Enter the Process no., Arrival time and Burst time of :-
+Process : 1 2 2
+Process : 2 5 6
+Process : 3 0 4
+Process : 4 4 7
+
+Enter the time quantum : 3
+
+GANTT CHART
+0  P3  3  P1  5  P3  6  P4  9  P2  12  P4  15  P2  18  P4  19
+
+Process no.     Burst time      Turnaround time Waiting time
+P3              4               6               2
+P1              2               5               3
+P4              7               19              12
+P2              6               18              12
+Average Turnaround time = 4.500000
+Average Waiting time = 3.000000
+</pre>
 <h2>Disk SCAN with Previous position</h2>
 <h3>Forward</h3>
 <pre>Enter the current head position : 43
