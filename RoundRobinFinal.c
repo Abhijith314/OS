@@ -4,8 +4,8 @@ int pno,bt,rbt,tat,wt,at;
 };
 void main()
 {
-int n=4,i,tq=3,j,comp[n],tbt=0;
-float ttat,twt,atwt,atat;
+int n=4,i,tq=3,j,tbt=0;
+float ttat=0,twt=0;
 printf("Enter the number of process : %d",n);
 //scanf("%d",&n);
 struct process p[n],temp;
@@ -31,8 +31,7 @@ for(i=0;i<n-1;i++) {		//sort the process structure using arrival time
 		}
 	}
 }
-for (i=0; i<n; i++) //initializing completed process array
-comp[i]=-1;
+
 int time=0,completedp=0,t,readyq[20],timeq[20],nxt,pro,k=0,flag=0,rqind=0,tmind=0,q;
 //completedp:completed queue index; readyq:ready queue; timeq:time queue; pro:process index; 
 //rqind:ready queue index; tmind:time queue index q:temp index for ready queue
@@ -60,10 +59,9 @@ while(completedp<n) {
 		else {
 			time=time+p[i].rbt;
 			timeq[tmind]=time; tmind++;
-			p[i].tat=time;
+			p[i].tat=time-p[i].at;
 			p[i].wt=p[i].tat-p[i].bt;
 			p[i].rbt=0;
-			comp[completedp]=i;
 			completedp++;
 			for(t=time,pro=i; t<tbt; t++) {   //checking upcoming process is ready to execute
 				if (p[(pro+1)%n].at<=time && p[(pro+1)%n].rbt!=0 && readyq[j-1]!=(pro+1)%n) {
@@ -73,12 +71,9 @@ while(completedp<n) {
 					pro++;
 				}
 			}
-			if(completedp==n) {  //checking if all the process are completed
-				break;
-			}
 		}
 		if(rqind==j-1) {   //setting i with process index in readyq
-		i=(i+1)%n;
+			i=(i+1)%n;
 		}
 		else {
 			rqind++;
@@ -96,11 +91,9 @@ printf("P%d  %d  ",p[readyq[i]].pno,timeq[i+1]);
 printf("\n\nProcess no.\tBurst time\tTurnaround time\tWaiting time\n");
 for(i=0;i<n;i++) {
 printf("P%d\t\t%d\t\t%d\t\t%d\n",p[i].pno,p[i].bt,p[i].tat,p[i].wt);
+ttat+=p[i].tat;
+twt+=p[i].wt;
 }
-ttat=p[n-1].tat;
-twt=p[n-1].wt;
-atat=ttat/n;
-atwt=twt/n;
-printf("Average Turnaround time = %f\n",atat);
-printf("Average Waiting time = %f\n",atwt);
+printf("Average Turnaround time = %f\n",ttat/n);
+printf("Average Waiting time = %f\n",twt/n);
 }
